@@ -28,7 +28,6 @@ IoT 개발자 기초 프로그래밍 언어 리포지토리
     - 설치 전, 파워셀 관리자모드 실행
         ''' shell
         > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
-
         '''
     - https://pyenv-win.github.io/pyenv-win/ Quick Start 1번 실행
     - pyenv로 파이썬 버전 설치 및 전역설정
@@ -36,4 +35,19 @@ IoT 개발자 기초 프로그래밍 언어 리포지토리
 - visual Studio Code
     - 확장에서 Python 설치
     - *.py 파일 생성 후 코딩
-    - Ctrl+F5로 실행행
+    - Ctrl+F5로 실행
+
+## 2일차
+-  파이썬 기초
+    - 변수와 자료형
+    - 입출력 
+        - 화면입출력
+        - 문자열포맷팅
+    - 연산자
+    - 흐름제어
+    - 파일입출력
+    - 함수
+    - 객체지향
+    - 모듈, 패키지
+    - 예외처리
+    - 디버깅
