@@ -26,9 +26,9 @@ IoT 개발자 기초 프로그래밍 언어 리포지토리
 - 파이썬 개발환경 Pyenv
     - 파이썬 버전을 손쉽게 변경할 수 있는 툴
     - 설치 전, 파워셀 관리자모드 실행
-        ''' shell
+        ```shell
         > Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
-        '''
+        ```
     - https://pyenv-win.github.io/pyenv-win/ Quick Start 1번 실행
     - pyenv로 파이썬 버전 설치 및 전역설정
 
@@ -66,9 +66,39 @@ IoT 개발자 기초 프로그래밍 언어 리포지토리
 ## 3일차
 - 파이썬 기초
     - 흐름제어
+        - if - 참을 기준으로 분기
+        - for - 반복문
+        - while - 참인 조건일 동안 무한반복
     - 파일입출력
+        - open(경로, mode='r|w|a', encodoing='utf-8')
+        - write(), readline()
+        - close()
     - 함수
+        - f(x) = y
+        - 자주 사용할 로직을 묶어놓은 덩어리
+        - 함수 호출
+        ```python
+        def funcName(param):
+            # 로직
+        ```
     - 객체지향
+        - 현실세계와 동일하게 프로그래밍 하겠다는 설계방식
+        - 객체의 틀이되는 클래스 선언
+        - 클래스 : 명사와 동사의 집합
+            - 명사 : 멤버변수(속성)
+            - 동사 : 멤버함수(메서드)
+        
+        ```python
+        class ClassName:
+            # 멤버변수
+
+            def 멤버함수(self, param):
+                # 로직
+        ```
+
+## 4일차
+- 파이썬 기초
+    - 객체지향 다시
     - 모듈, 패키지
     - 예외처리
     - 디버깅
