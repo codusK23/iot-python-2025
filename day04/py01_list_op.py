@@ -71,3 +71,4 @@ for i in arr:
 print(f'{len(arr)}까지의 합산은, {sum}입니다.')
 
 
+
