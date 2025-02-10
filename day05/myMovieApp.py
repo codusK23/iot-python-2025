@@ -1,7 +1,7 @@
 import os # 운영체제 모듈
 from Movie import Movie
 
-VERSION = 0.1
+VERSION = 0.5
 
 def clearScreen(): # os에 특화된 팁
     command = 'clear'
@@ -17,15 +17,19 @@ def run():
     # set_movie()
     clearScreen() # 최초 화면 클리어
     lst_movie = [] # 영화리스트를 담는 변수 list 타입
+    load_movie(lst_movie)
 
     while True:
         sel_menu = set_menu()
-        load_movie(lst_movie)
 
         if sel_menu == 1:
             # print("영화 입력")
-            movie = set_movie()
-            lst_movie.append(movie)
+            try:
+                movie = set_movie()
+                lst_movie.append(movie)
+                print("영화입력 성공!")
+            except Exception as e:
+                print(f'영화입력 실패! {e}')
 
         elif sel_menu == 2:
             print("영화 출력")
@@ -55,9 +59,14 @@ def run():
 
 # 영화검색 함수
 def search_movie(items: list, title: str):
+    count = 0
     for item in items: # item이 Movie 클래스인지 알 수 없음
         if item.isNameContain(title): # 오타발생위험
+            count += 1 # 검색된 결과가 있음
             print(item)
+            print("----------")
+
+    print(f'검색 데이터수: {count} 개')
 
 def del_movie(items: list, title: str):
     for i, item in enumerate(items): # 열거하기 위한 클래스(인덱스와 함께 출력)
@@ -91,6 +100,7 @@ def load_movie(items: list):
 
         movie = Movie(title, year, company, rate)
         items.append(movie)
+
     f.close()
 
 def set_movie():
@@ -106,6 +116,9 @@ def set_movie():
 def get_movie(items: list):
     for item in items:
         print(item) # Movie 객체
+        print("----------") # 각 영화 아이템별 구분자
+    
+    print(f'총 데이터수: {len(items)} 개')
 
 def set_menu():
     str_menu = (f"내 영화 앱 v{VERSION}\n"
