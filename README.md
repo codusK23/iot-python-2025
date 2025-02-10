@@ -141,11 +141,7 @@ IoT 개발자 기초 프로그래밍 언어 리포지토리
             - 화면편집 : 검색이나 출력시 데이터 수 표시
          
 
-
-
-https://github.com/user-attachments/assets/1f948a6e-cda9-4b67-b963-99c219189e2a
-
-
+https://github.com/user-attachments/assets/416a6b22-1642-449d-9d28-7012110c79d6
 
 
         - 챗 GPT 윈도우앱 만들기
