@@ -57,7 +57,7 @@ root.geometry('730x450')
 
 # 12. 아이콘 변경
 #./image/ 경로는 삭제
-root.iconbitmap('./day07/robot_1.ico') # pyinstaller때는 실행 파일에 복사
+# root.iconbitmap('./day07/robot_1.ico') # pyinstaller때는 실행 파일에 복사
 
 # 7. 전체에서 사용할 폰트 지정 -> 나눔고딕
 myFont = Font(family='NanumGothic', size=10)
